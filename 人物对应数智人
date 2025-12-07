@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>豆包数智人合集</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 手机自适应 -->
+  <style>
+    body { margin: 0; padding: 20px; background: #f5f5f5; font-family: sans-serif; }
+    .title { text-align: center; color: #333; font-size: 22px; margin: 20px 0 30px; }
+    .bot-btn { 
+      background: #fff; 
+      border-radius: 18px; 
+      padding: 22px; 
+      margin: 12px 0; 
+      text-align: center; 
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08); 
+      font-size: 17px; 
+      color: #333; 
+      text-decoration: none; /* 去除链接下划线 */
+    }
+    .bot-btn:active { background: #f0f9ff; } /* 手机点击反馈 */
+    .back-top { 
+      position: fixed; 
+      bottom: 25px; 
+      right: 25px; 
+      background: #4096ff; 
+      color: white; 
+      border: none; 
+      border-radius: 50%; 
+      width: 55px; 
+      height: 55px; 
+      font-size: 26px; 
+      cursor: pointer; 
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">豆包数智人聊天入口</h1>
+  
+  <!-- 6个数智人按钮（绑定你的专属链接） -->
+  <a href="https://www.doubao.com/bot/WrNJ3W8f" class="bot-btn">彤管(小红) | 双娇公主婢女</a>
+  <a href="https://www.doubao.com/bot/Fh6VtsIW" class="bot-btn">双娇 | 爱慕张春郎的婢女</a>
+  <a href="https://www.doubao.com/bot/E2BsdwJI" class="bot-btn">长老法聪 | 青云寺长老</a>
+  <a href="https://www.doubao.com/bot/sw0BsGUq" class="bot-btn">阿僮 | 忠诚书童·潮汕文化分享</a>
+  <a href="https://www.doubao.com/bot/u5Y9r0VC" class="bot-btn">半空 | 张春郎挚友·青云寺僧人</a>
+  <a href="https://www.doubao.com/bot/JiSuwWQi" class="bot-btn">张春郎 | 才华书生·重情好游</a>
+
+  <!-- 手机端返回顶部按钮 -->
+  <button class="back-top" onclick="window.scrollTo(0,0)">↑</button>
+</body>
+</html>
