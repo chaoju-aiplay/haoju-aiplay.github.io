@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>豆包数智人合集</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="豆包数智人聊天入口合集，包含彤管、双娇、长老法聪等角色">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 20px 0;
+      background: #f5f5f5; 
+      line-height: 1.5;
+    }
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .title { 
+      text-align: center; 
+      margin-bottom: 30px; 
+      color: #24292e;
+      font-size: 22px; 
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .bot-list { 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 15px; 
+      justify-content: center; 
+    }
+    .bot-btn { 
+      background: #ffffff; 
+      border: 1px solid #e1e4e8;
+      border-radius: 12px; 
+      padding: 20px 15px; 
+      width: calc(50% - 8px);
+      text-align: center; 
+      cursor: pointer; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+      min-height: 100px;
+    }
+    .bot-btn:active { 
+      background: #f0f8ff; 
+      transform: scale(0.98);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .bot-name { 
+      font-size: 17px; 
+      font-weight: 600; 
+      color: #24292e; 
+      margin-bottom: 6px; 
+    }
+    .bot-desc { 
+      font-size: 13px; 
+      color: #6a737d;
+      line-height: 1.4;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @media (min-width: 576px) {
+      .bot-btn {
+        width: calc(33.333% - 10px);
+        padding: 22px 18px;
+      }
+      .title { font-size: 24px; }
+      .bot-name { font-size: 18px; }
+      .bot-desc { font-size: 14px; }
+    }
+    @media (min-width: 768px) {
+      .bot-btn {
+        width: calc(25% - 11px);
+        padding: 24px 20px;
+      }
+      .bot-btn:hover::after {
+        content: attr(data-desc);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #24292e;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        white-space: nowrap;
+        z-index: 10;
+      }
+    }
+    @media (min-width: 1200px) {
+      .bot-btn { width: calc(16.666% - 12px); }
+    }
+    @media (max-width: 320px) {
+      .bot-btn { padding: 16px 12px; }
+      .bot-name { font-size: 16px; }
+      .bot-desc { font-size: 12px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; }
+      .title, .bot-name { color: #f0f0f0; }
+      .bot-desc { color: #c9d1d9; }
+      .bot-btn {
+        background: #161b22;
+        border-color: #30363d;
+      }
+      .bot-btn:hover {
+        background: #1f2428;
+        border-color: #4f9cff;
+      }
+      .bot-btn:active { background: #232931; }
+      .bot-btn:hover::after { background: #30363d; }
+    }
+
+    @media (hover: hover) {
+      .bot-btn:hover {
+        background: #f5f9ff;
+        border-color: #4096ff;
+        box-shadow: 0 6px 16px rgba(64,150,255,0.2);
+        transform: translateY(-2px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">豆包数智人聊天入口</h1>
+    <div class="bot-list">
+      <!-- 彤管(小红) -->
+      <div class="bot-btn" onclick="openBot('https://www.doubao.com/bot/WrNJ3W8f')" data-desc="双娇公主的婢女，聪明伶俐，忠心耿耿">
+        <div class="bot-name">彤管(小红)</div>
+        <div class="bot-desc">双娇公主的婢女</div>
+      </div>
+      <!-- 双娇（已去掉“婢女”） -->
+      <div class="bot-btn" onclick="openBot('https://www.doubao.com/bot/Fh6VtsIW')" data-desc="爱慕张春郎的公主，重情威严，性格刚烈">
+        <div class="bot-name">双娇</div>
+        <div class="bot-desc">爱慕张春郎的公主，重情威严</div>
+      </div>
+      <!-- 长老法聪 -->
+      <div class="bot-btn" onclick="openBot('https://www.doubao.com/bot/E2BsdwJI')" data-desc="青云寺长老，禅意通透，看破红尘，乐于助人">
+        <div class="bot-name">长老法聪</div>
+        <div class="bot-desc">青云寺长老，禅意通透</div>
+      </div>
+      <!-- 阿僮 -->
+      <div class="bot-btn" onclick="openBot('https://www.doubao.com/bot/sw0BsGUq')" data-desc="忠诚书童，熟悉潮汕文化，性格活泼开朗">
+        <div class="bot-name">阿僮</div>
+        <div class="bot-desc">忠诚书童，潮汕文化分享者</div>
+      </div>
+      <!-- 半空 -->
+      <div class="bot-btn" onclick="openBot('https://www.doubao.com/bot/u5Y9r0VC')" data-desc="张春郎挚友，青云寺僧人，性格洒脱，重情重义">
+        <div class="bot-name">半空</div>
+        <div class="bot-desc">张春郎挚友，青云寺僧人</div>
+      </div>
+      <!-- 张春郎 -->
+      <div class="bot-btn" onclick="openBot('https://www.doubao.com/bot/JiSuwWQi')" data-desc="才华横溢的书生，重情重义，喜爱游历山水">
+        <div class="bot-name">张春郎</div>
+        <div class="bot-desc">才华书生，重情好游</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openBot(url) {
+      try {
+        const newWindow = window.open(url, '_blank');
+        if (!newWindow) {
+          window.location.href = url;
+        }
+      } catch (e) {
+        window.location.href = url;
+        console.log('GitHub 环境跳转异常：', e);
+      }
+    }
+
+    window.addEventListener('load', () => {
+      console.log('豆包数智人合集（GitHub 版）加载完成');
+    });
+  </script>
+</body>
+</html>
